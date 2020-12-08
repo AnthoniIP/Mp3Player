@@ -1,10 +1,10 @@
 package com.example.mp3service
 
 interface Mp3Service {
-    fun play(file : String)
-    fun stop()
+    fun play(file: String)
     fun pause()
-    var currentSong : String?
+    fun stop()
+    val currentSong: String?
     val totalTime: Int
     val elapsedTime: Int
 }
